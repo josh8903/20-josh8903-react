@@ -50,7 +50,7 @@ function App() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Switch basename={process.env.PUBLIC_URL}>
+          <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/index" component={Home} />
