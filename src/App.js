@@ -12,7 +12,7 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <BrowserRouter basename="/20-josh8903-react">
+    <BrowserRouter>
       <div>
         <StoreProvider>
           <Navbar
@@ -50,7 +50,7 @@ function App() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Switch>
+          <Switch basename="/20-josh8903-react">
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/index" component={Home} />
