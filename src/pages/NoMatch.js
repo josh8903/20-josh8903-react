@@ -1,6 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../components/Grid";
-import Jumbotron from "../components/Jumbotron";
+import { Col, Row, Container, Jumbotron } from "react-bootstrap";
 
 const NoMatch = () => {
   return (
@@ -10,8 +9,8 @@ const NoMatch = () => {
           <Jumbotron>
             <h1>404 Page Not Found</h1>
             <h1>
-              <span role="img" aria-label="Face With Rolling Eyes Emoji">
-                🙄
+              <span role="img" aria-label="Gravestone Emoji">
+                🪦
               </span>
             </h1>
           </Jumbotron>
