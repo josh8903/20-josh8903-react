@@ -1,5 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as BrowserRouter,
+  Route,
+  Switch,
+} from "react-router-dom";
 import { StoreProvider } from "./utils/GlobalState";
 import { Navbar, Nav } from "react-bootstrap";
 import Home from "./pages/Home";
@@ -8,7 +12,7 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <StoreProvider>
           <Navbar
@@ -61,7 +65,7 @@ function App() {
           </footer>
         </StoreProvider>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
