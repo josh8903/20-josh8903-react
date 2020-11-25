@@ -8,7 +8,7 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <StoreProvider>
           <Navbar
@@ -47,14 +47,10 @@ function App() {
             </Navbar.Collapse>
           </Navbar>
           <Switch>
-            <Route exact path="/20-josh8903-react" component={Home} />
-            <Route exact path="/20-josh8903-react/home" component={Home} />
-            <Route exact path="/20-josh8903-react/index" component={Home} />
-            <Route
-              exact
-              path="/20-josh8903-react/portfolio"
-              component={Portfolio}
-            />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/index" component={Home} />
+            <Route exact path="/portfolio" component={Portfolio} />
 
             <Route component={NoMatch} />
           </Switch>
