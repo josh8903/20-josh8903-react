@@ -47,26 +47,15 @@ function App() {
             </Navbar.Collapse>
           </Navbar>
           <Switch>
+            <Route exact path="/20-josh8903-react" component={Home} />
+            <Route exact path="/20-josh8903-react/home" component={Home} />
+            <Route exact path="/20-josh8903-react/index" component={Home} />
             <Route
               exact
-              path="https://josh8903.github.io/20-josh8903-react/"
-              component={Home}
-            />
-            <Route
-              exact
-              path="https://josh8903.github.io/20-josh8903-react/home"
-              component={Home}
-            />
-            <Route
-              exact
-              path="https://josh8903.github.io/20-josh8903-react/index"
-              component={Home}
-            />
-            <Route
-              exact
-              path="https://josh8903.github.io/20-josh8903-react/portfolio"
+              path="/20-josh8903-react/portfolio"
               component={Portfolio}
             />
+
             <Route component={NoMatch} />
           </Switch>
           <footer style={{ textAlign: "center" }}>
