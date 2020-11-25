@@ -12,7 +12,7 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/20-josh8903-react">
       <div>
         <StoreProvider>
           <Navbar
